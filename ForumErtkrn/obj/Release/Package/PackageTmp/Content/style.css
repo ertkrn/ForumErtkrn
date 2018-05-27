@@ -8,8 +8,10 @@ h1 {
 }
 
 .navbar-default .navbar-brand {
-    margin-left:20px;
-    color: #7af2f8;
+    font-family: Arial;
+    margin-left: 20px;
+    color: #bcf0ff;
+    font-weight: bold;
 }
 
 .navbar .navbar-brand:hover{
@@ -33,7 +35,7 @@ h1 {
 }
 
 .navbar-right a:hover{
-    color:#7af2f8;
+    color:#bcf0ff;
 }
 
 .post{
@@ -113,7 +115,7 @@ h1 {
 .post-metin{
     float:left;
     font-size:10px;
-    width:255px;
+    width:70%;
     height:100%;
     margin-left:5px;
 }
@@ -325,7 +327,7 @@ h1 {
     .post-metin {
         float: left;
         font-size: 10px;
-        width: 155px;
+        width: 70%;
         height: 100%;
         margin-left: 5px;
     }
@@ -338,5 +340,34 @@ h1 {
 
     .post-metin p{
         font-size: 9px;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom,#cf8927 0,#86710b 100%);
+        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.3) inset, 0 0px 0 #995f2feb;
+    }
+
+    #footer a {
+        font-size:10px;
+        color:#ffffff;
+        text-decoration:none;
+    }
+
+    #footer a:hover {
+        color:#bcf0ff;
+    }
+
+    #footer div{
+        margin-top:5px;
+    }
+
+    #menuid {
+        font-family:'Letter Gothic Std';
+        font-weight:bold;
+        color: #bcf0ff;
+    }
+
+    #Profil{
+        margin-left:12px;
     }
 }
