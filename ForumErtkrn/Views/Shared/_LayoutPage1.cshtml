@@ -2,12 +2,17 @@
 
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="ertkrn, ertkrn forum, kazanclimani, kazanç, limani, limanı, kazanc, türkiye, milli, en, büyük, satış, sitesi, ihtiyaç, aradığın, hepsi, herşey, burada, ikinci, el, aldım, sattım, çek, yükle, mesaj, at, kazanç limanı, Online Alışveriş Sitesi,">
+    <meta name="description" content="ertkrn forum - Mevzu var dediler geldik!">
+    <meta name="google-site-verification" content="qmZgjeieVSjIIOdNWXEF6ujHPbvaY7jDe9SWoAD82xU" />
+    <link rel="shortcut icon" href="~/favicon.ico" />
+    <title>@ViewBag.Title</title>
+
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="~/Content/style.css" rel="stylesheet" />
-
-    <title>@ViewBag.Title</title>
 </head>
 <body>
     <div class="navbar navbar-default">
@@ -25,6 +30,13 @@
     </div>
     <div class="container-fluid">
         @RenderBody()
+        <div class="col-md-3 hidden-xs hidden-md">
+            <iframe src="http://kazanclimani.com/"></iframe>
+            <iframe src="http://fatihmandirali.com/"></iframe>
+        </div>
+        <div class="col-md-3 hidden-md hidden-xs">
+            <a href="https://play.google.com/store/apps/details?id=com.egsoft.sestenyaziya"><img src="~/Content/Images/ertkrn-rseskslsasm/rseskslsasm.jpg" style="width:350px;height:615px; border:10px;" /></a>
+        </div>
     </div>
     <div class="navbar navbar-default navbar-fixed-bottom hidden-lg hidden-md" id="footer">
         <div class="col-xs-3 text-center"><a href="#anasayfa" id="Anasayfa"><i class="glyphicon glyphicon-home"></i><br /><strong id="menuid">Anasayfa</strong></a></div>
@@ -33,22 +45,11 @@
         <div class="col-xs-2 text-center"><a href="#search" id="Search"><i class="glyphicon glyphicon-search"></i></a></div>
         <div class="col-xs-2 text-center"><a href="#profil" id="Profil"><i class="glyphicon glyphicon-user"></i></a></div>
     </div>
-
-    <script>
-        setTimeout(function () {
-            $('#footer').hide();
-        }, 5000);
-
-        window.addEventListener('touchstart', function () {
-            $('#footer').removeAttr('style');
-            setTimeout(function () {
-            $('#footer').hide();
-        }, 5000);
-        });
-    </script>
-
+    <a href="#top" class="glyphicon glyphicon-arrow-up scrolltop" id="scrlltp"></a>
     <script src="~/Scripts/jquery-1.9.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/menu-degistir.js"></script>
+    <script src="~/Scripts/menu-gizle.js"></script>
+    <script src="~/Scripts/custom.js"></script>
 </body>
 </html>

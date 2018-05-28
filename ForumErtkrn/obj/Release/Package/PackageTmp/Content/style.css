@@ -7,6 +7,13 @@ h1 {
     color: #78430b;
 }
 
+iframe {
+    width: 350px;
+    height: 615px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .navbar-default .navbar-brand {
     font-family: Arial;
     margin-left: 20px;
@@ -258,6 +265,38 @@ h1 {
 	border: 0;
 }
 
+.scrolltop {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  opacity: 80;
+  filter: alpha(opacity=8000);
+  position: fixed;
+  top: 680px;
+  right: 50px;
+  display: none;
+  font-size: 0;
+  background: #343331;
+  z-index: 999999;
+  text-align: center;
+  color: #ffffff !important;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.scrolltop:hover {
+  text-decoration: none;
+  opacity: 90;
+  filter: alpha(opacity=9000);
+}
+
+.scrolltop:before {
+  content: "\e093";
+  font-size: 30px;
+  font-style: normal;
+}
+
 @media (max-width:600px){
     .navbar-default .navbar-brand {
         background-image: -webkit-linear-gradient(top, #ffa604, #a95804);
@@ -340,6 +379,11 @@ h1 {
 
     .post-metin p{
         font-size: 9px;
+    }
+
+    .scrolltop{
+        top:620px;
+        right:10px;
     }
 
     #footer {
