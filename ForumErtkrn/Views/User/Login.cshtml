@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "ertkrn forum - Giriş Yap";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div class="col-md-offset-2 col-md-5 col-xs-12">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3>forum ertkrn</h3>
+            <hr />
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data", @class="login100-form validate-form" }))
+            {
+                <span class="login100-form-title">
+					Kullanıcı Girişi
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input100" type="text" name="email" placeholder="Email" required>
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+					</span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Şifre alanı zorunludur.">
+					<input class="input100" type="password" name="pass" placeholder="Şifre" required>
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+					</span>
+				</div>
+				
+				<div class="container-login100-form-btn">
+					<button class="login100-form-btn">
+						Giriş
+					</button>
+				</div>
+
+				<div class="text-center p-t-12">
+					<span class="txt1">
+						Unuttun Mu ?
+					</span>
+					<a class="txt2" href="#">
+						(Email / Şifre)
+					</a>
+				</div>
+
+				<div class="text-center p-t-136">
+					<a class="txt2" href="#">
+						Hemen Kayıt Ol
+						<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+					</a>
+				</div>
+            }
+        </div>
+        <div class="panel-footer">
+            <a href="/" role="button">Geri Dön</a>
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(function () {
+        $('#footer').hide();
+    }, 0);
+</script>
